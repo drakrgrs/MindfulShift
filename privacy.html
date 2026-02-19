@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — ScrollStop</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0e0e12;
+      --surface: #16161c;
+      --border: rgba(255,255,255,0.07);
+      --accent: #7c6af7;
+      --text: #f0f0f5;
+      --muted: #888898;
+      --radius: 18px;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      border-bottom: 1px solid var(--border);
+      background: rgba(14,14,18,0.85);
+      backdrop-filter: blur(16px);
+    }
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      font-size: 1.05rem;
+      text-decoration: none;
+      color: var(--text);
+    }
+    .nav-brand img { width: 32px; height: 32px; border-radius: 8px; }
+    .nav-link { color: var(--muted); text-decoration: none; font-size: 0.9rem; }
+    .nav-link:hover { color: var(--text); }
+
+    .content {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 64px 24px 96px;
+    }
+    .content h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+    .effective {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 48px;
+    }
+    .content h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin: 36px 0 10px;
+      color: var(--text);
+    }
+    .content p {
+      font-size: 0.95rem;
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+    .content ul {
+      list-style: none;
+      margin-bottom: 14px;
+    }
+    .content ul li {
+      font-size: 0.95rem;
+      color: var(--muted);
+      padding: 4px 0 4px 20px;
+      position: relative;
+    }
+    .content ul li::before {
+      content: '•';
+      color: var(--accent);
+      position: absolute;
+      left: 0;
+    }
+    .highlight {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin: 24px 0;
+    }
+    .highlight p {
+      margin: 0;
+      font-size: 0.92rem;
+      color: var(--text);
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 24px 40px;
+      text-align: center;
+    }
+    footer p { font-size: 0.85rem; color: var(--muted); }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-brand" href="index.html">
+      <img src="icon.png" alt="ScrollStop icon" />
+      ScrollStop
+    </a>
+    <a class="nav-link" href="index.html">← Back</a>
+  </nav>
+
+  <div class="content">
+    <h1>Privacy Policy</h1>
+    <p class="effective">Effective date: February 19, 2026</p>
+
+    <div class="highlight">
+      <p><strong>Short version:</strong> ScrollStop does not collect, store, or transmit any personal data. Everything stays on your device.</p>
+    </div>
+
+    <h2>1. Overview</h2>
+    <p>ScrollStop ("the app", "we", "us") is a mindfulness and screen time management application for iPhone. This Privacy Policy describes our practices regarding information — or more accurately, the lack thereof.</p>
+
+    <h2>2. Data We Collect</h2>
+    <p><strong>We collect no personal data.</strong> ScrollStop does not require an account, does not connect to any server, and does not transmit any information off your device.</p>
+    <p>Specifically, we do not collect:</p>
+    <ul>
+      <li>Names, email addresses, or contact information</li>
+      <li>Usage analytics or behavioral data</li>
+      <li>Device identifiers or advertising IDs</li>
+      <li>Location data</li>
+      <li>Health or biometric data</li>
+      <li>Financial information</li>
+    </ul>
+
+    <h2>3. Data Stored on Your Device</h2>
+    <p>ScrollStop stores the following data locally on your device only, using Apple's standard iOS storage (CoreData and UserDefaults):</p>
+    <ul>
+      <li>Your custom reminder text and preferences</li>
+      <li>Monitoring configuration (selected apps, time thresholds, mode)</li>
+      <li>Quiet hours settings</li>
+      <li>Tag preferences for mindful phrase personalization</li>
+    </ul>
+    <p>This data never leaves your device and is not accessible to us or any third party.</p>
+
+    <h2>4. Screen Time &amp; Family Controls</h2>
+    <p>ScrollStop uses Apple's FamilyControls and DeviceActivity frameworks to provide screen time monitoring features. These frameworks operate entirely within Apple's system and do not expose app usage data to us. We cannot see which apps you monitor or how you use your device.</p>
+    <p>Family Controls authorization is granted through Apple's system prompt and is managed by iOS, not by ScrollStop.</p>
+
+    <h2>5. Purchases &amp; Subscriptions</h2>
+    <p>In-app purchases and subscriptions are processed entirely by Apple through StoreKit. We do not receive, store, or process any payment information. For questions about billing, please contact Apple Support.</p>
+
+    <h2>6. Third-Party Services</h2>
+    <p>ScrollStop uses no third-party analytics, advertising, or tracking SDKs. The only third-party framework used is Apple's own StoreKit for purchase processing.</p>
+
+    <h2>7. Children's Privacy</h2>
+    <p>ScrollStop does not knowingly collect data from anyone, including children under the age of 13. As we collect no data from any users, we are compliant with COPPA and similar regulations by design.</p>
+
+    <h2>8. Changes to This Policy</h2>
+    <p>If we ever change our privacy practices, we will update this page and revise the effective date above. We will not retroactively change practices for data already collected — because we have none.</p>
+
+    <h2>9. Contact</h2>
+    <p>If you have questions about this privacy policy, please contact us at:</p>
+    <p><a href="mailto:drakrgrs.dev@outlook.com">drakrgrs.dev@outlook.com</a></p>
+  </div>
+
+  <footer>
+    <p>© 2026 ScrollStop · <a href="index.html">Home</a></p>
+  </footer>
+
+</body>
+</html>
