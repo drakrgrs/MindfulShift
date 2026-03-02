@@ -11,8 +11,8 @@
       --bg: #0e0e12;
       --surface: #16161c;
       --border: rgba(255,255,255,0.07);
-      --accent: #7c6af7;
-      --accent-soft: rgba(124,106,247,0.12);
+      --accent: #7DA967;
+      --accent-soft: rgba(125,169,103,0.12);
       --text: #f0f0f5;
       --muted: #888898;
       --radius: 18px;
@@ -46,6 +46,7 @@
       color: var(--text);
     }
     .nav-brand img { width: 32px; height: 32px; border-radius: 8px; }
+    .nav-links { display: flex; gap: 24px; align-items: center; }
     .nav-link { color: var(--muted); text-decoration: none; font-size: 0.9rem; transition: color 0.2s; }
     .nav-link:hover { color: var(--text); }
     .hero {
@@ -60,7 +61,7 @@
       border-radius: 22px;
       margin: 0 auto 32px;
       display: block;
-      box-shadow: 0 8px 40px rgba(124,106,247,0.3);
+      box-shadow: 0 8px 40px rgba(125,169,103,0.3);
     }
     .badge {
       display: inline-block;
@@ -73,7 +74,7 @@
       padding: 5px 14px;
       border-radius: 999px;
       margin-bottom: 20px;
-      border: 1px solid rgba(124,106,247,0.2);
+      border: 1px solid rgba(125,169,103,0.2);
     }
     h1 {
       font-size: clamp(2.2rem, 6vw, 3.4rem);
@@ -131,7 +132,7 @@
       padding: 28px;
       transition: border-color 0.2s;
     }
-    .feature-card:hover { border-color: rgba(124,106,247,0.3); }
+    .feature-card:hover { border-color: rgba(125,169,103,0.3); }
     .feature-icon { font-size: 1.8rem; margin-bottom: 14px; display: block; }
     .feature-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 8px; }
     .feature-card p { font-size: 0.9rem; color: var(--muted); line-height: 1.6; }
@@ -152,7 +153,7 @@
       height: 40px;
       border-radius: 50%;
       background: var(--accent-soft);
-      border: 1px solid rgba(124,106,247,0.3);
+      border: 1px solid rgba(125,169,103,0.3);
       color: var(--accent);
       font-weight: 700;
       font-size: 0.9rem;
@@ -175,7 +176,7 @@
     }
     .pricing-card.featured {
       border-color: var(--accent);
-      background: linear-gradient(135deg, rgba(124,106,247,0.08), var(--surface));
+      background: linear-gradient(135deg, rgba(125,169,103,0.08), var(--surface));
     }
     .pricing-tier {
       font-size: 0.78rem;
@@ -207,6 +208,7 @@
       gap: 12px;
     }
     footer p { font-size: 0.85rem; color: var(--muted); }
+    .footer-links { display: flex; gap: 20px; }
     footer a { color: var(--muted); text-decoration: none; font-size: 0.85rem; }
     footer a:hover { color: var(--text); }
     @media (max-width: 600px) {
@@ -222,7 +224,10 @@
       <img src="icon.png" alt="Mindful Shift icon" />
       Mindful Shift
     </a>
-    <a class="nav-link" href="privacy.html">Privacy Policy</a>
+    <div class="nav-links">
+      <a class="nav-link" href="support.html">Support</a>
+      <a class="nav-link" href="privacy.html">Privacy Policy</a>
+    </div>
   </nav>
 
   <section class="hero">
@@ -330,7 +335,6 @@
           <li>Block Now instant shield</li>
           <li>Mindful notification pings</li>
           <li>Custom intervals & quiet hours</li>
-          <li>Daily focus themes</li>
           <li>Tag personalization</li>
         </ul>
       </div>
@@ -352,7 +356,10 @@
 
   <footer>
     <p>© 2026 Mindful Shift. Made with intention.</p>
-    <a href="privacy.html">Privacy Policy</a>
+    <div class="footer-links">
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
   </footer>
 
   <script>
