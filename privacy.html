@@ -10,7 +10,7 @@
       --bg: #0e0e12;
       --surface: #16161c;
       --border: rgba(255,255,255,0.07);
-      --accent: #7c6af7;
+      --accent: #7DA967;
       --text: #f0f0f5;
       --muted: #888898;
       --radius: 18px;
@@ -118,7 +118,10 @@
       <img src="icon.png" alt="Mindful Shift icon" />
       Mindful Shift
     </a>
-    <a class="nav-link" href="index.html">← Back</a>
+    <div style="display:flex;gap:24px;">
+      <a class="nav-link" href="support.html">Support</a>
+      <a class="nav-link" href="index.html">← Home</a>
+    </div>
   </nav>
 
   <div class="content">
@@ -171,8 +174,10 @@
     <p>If we ever change our privacy practices, we will update this page and revise the effective date above. We will not retroactively change practices for data already collected — because we have none.</p>
 
     <h2>9. Contact</h2>
-    <p>If you have questions about this privacy policy, please contact us at:</p>
-    <p><a href="mailto:drakrgrs.dev@outlook.com">drakrgrs.dev@outlook.com</a></p>
+    <p>If you have questions about this privacy policy, you can reach us directly:</p>
+    <button onclick="(function(){var u='drakrgrs.dev',d='outlook.com';window.location.href='mailto:'+u+'@'+d;})()" style="margin-top:8px;background:var(--accent);color:#fff;font-size:0.9rem;font-weight:600;padding:10px 22px;border:none;border-radius:999px;cursor:pointer;font-family:inherit;">
+      Contact Us
+    </button>
   </div>
 
   <footer>
